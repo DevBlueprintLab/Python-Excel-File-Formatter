@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 A Python automation tool that automatically formats Excel spreadsheets into clean, structured, and report-ready files.
 
@@ -41,25 +41,21 @@ This tool automates formatting tasks and transforms raw spreadsheets into clean,
 
 ## 🖥️ Demo
 
-### 📄 Original Workbook
+### 🔍 Before Execution & Runtime Overview
 
 <p align="center">
-  <img src="images/before.png" width="650"/>
-</p>
-
-### ⚙️ Execution Process
-
-<p align="center">
-  <img src="images/terminal.png" width="650"/>
-</p>
-
-### ✨ Formatted Output
-
-<p align="center">
-  <img src="images/after.png" width="650"/>
+  <img src="images/before.png" width="350"/>
+  <img src="images/terminal.png" width="350"/>
 </p>
 
 ---
+
+### ✨ Post-Execution Result
+
+<p align="center">
+  <img src="images/after.png" width="500"/>
+</p>
+
 
 ## 🛠️ Tech Stack
 
@@ -104,6 +100,11 @@ python excel_formatter.py
 - Generate charts
 - Export formatting logs
 - Add a graphical user interface (GUI)
+
+---
+## 📂 Sample Data
+
+This project was tested using a sample Excel dataset to demonstrate automated formatting and transformation.
 
 ---
 
