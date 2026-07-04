@@ -16,7 +16,7 @@ It loads an existing workbook, applies professional styling, inserts calculated 
 
 ## ⭐ Why this project matters
 
-Manually formatting Excel files is repetitive, error-prone, and time-consuming—especially in reporting workflows.
+Manually formatting Excel files is repetitive, error-prone, and time-consuming, especially in reporting workflows.
 
 This tool automates formatting tasks and transforms raw spreadsheets into clean, structured, and presentation-ready reports in seconds.
 
