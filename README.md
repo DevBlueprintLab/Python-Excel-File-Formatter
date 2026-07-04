@@ -41,24 +41,20 @@ This tool automates formatting tasks and transforms raw spreadsheets into clean,
 
 ## 🖥️ Demo
 
-### 📄 Original Workbook
+### 🔍 Before Execution & Runtime Overview
 
 <p align="center">
-  <img src="images/before.png" width="650"/>
+  <img src="images/before.png" width="350"/>
+  <img src="images/terminal.png" width="350"/>
 </p>
 
-### ⚙️ Execution Process
+---
+
+### ✨ Post-Execution Result
 
 <p align="center">
-  <img src="images/terminal.png" width="650"/>
+  <img src="images/after.png" width="500"/>
 </p>
-
-### ✨ Formatted Output
-
-<p align="center">
-  <img src="images/after.png" width="650"/>
-</p>
-
 ---
 
 ## 🛠️ Tech Stack
