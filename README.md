@@ -55,7 +55,7 @@ pip install openpyxl
 ```
 2. Run the tool
 ```bash
-python excel_formatter.py
+python excel-file-formatter.py
 ```
 3. Execution example
 ```bash
