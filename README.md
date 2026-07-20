@@ -1,90 +1,167 @@
 # 📊 Automated Excel File Formatter
 
 ![Python Version](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
-![Dependencies](https://img.shields.io/badge/Dependencies-openpyxl-orange)
-![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Dependency](https://img.shields.io/badge/Dependency-openpyxl-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A Python CLI automation tool that transforms raw Excel spreadsheets into clean, structured, and presentation-ready reports.
+A Python automation tool that transforms raw Excel spreadsheets into structured, formatted, and presentation-ready reports.
 
-The program works non-destructively: it reads the original workbook, applies formatting and calculations, and saves the result as a new file without modifying the source data.
+The program reads an existing workbook, applies automated formatting and calculations, then saves an updated copy without modifying the original file.
 
 ---
 
-## 🖥️ Pipeline Lifecycle & Live Demo
+# 🖥️ Demo
 
-### Ingestion ➔ Processing ➔ Output
+### Raw Spreadsheet ➜ Automated Formatting ➜ Professional Excel Report
 
 <p align="center">
-  <img src="images/before.png" width="380" alt="Unformatted Spreadsheet" />
-  <img src="images/terminal.png" width="380" alt="CLI Execution Process" />
+  <img src="images/excel-input.png" width="380" alt="Raw Excel spreadsheet" />
+  <img src="images/formatting-process.png" width="380" alt="Excel formatting process" />
 </p>
 
 <p align="center">
-  <img src="images/after.png" width="765" alt="Formatted Spreadsheet Output" />
+  <img src="images/formatted-excel-output.png" width="765" alt="Formatted Excel output" />
 </p>
 
 ---
 
-## 🧠 Core Features & Architecture
+# 🎯 Problem
 
-* 🛡️ **Safe File Handling:** Validates file paths using `pathlib` and ensures the original workbook is never modified. Outputs are saved as a separate file.
-* 🧮 **Automated Calculations:** Detects common numeric headers (e.g. revenue, sales, cost, profit) and inserts Excel `SUM` formulas into a summary row.
-* 💲 **Currency Formatting:** Applies consistent currency formatting to detected financial columns for improved readability.
-* 🎨 **Styling System:** Applies structured formatting including headers, borders, alignment, and color styling to improve spreadsheet clarity.
-* 🔍 **Usability Enhancements:** Freezes header row and enables Excel filters for easier navigation of large datasets.
+Business spreadsheets often require repetitive manual preparation before they can be shared or analyzed.
+
+Tasks such as formatting headers, adjusting columns, applying currency formats, and calculating totals can consume unnecessary time when performed repeatedly.
 
 ---
 
-## 🛠️ Tech Stack & Requirements
+# ✅ Solution
 
-* **Core Language:** Python 3.x  
-* **Spreadsheet Engine:** `openpyxl`  
-* **File Handling:** `pathlib`  
-* **System Utilities:** `sys`  
+This tool automates Excel report preparation by:
+
+- Applying consistent spreadsheet formatting
+- Detecting financial-related columns
+- Adding automatic SUM calculations
+- Improving readability and navigation
+- Creating a formatted copy while preserving the original workbook
 
 ---
 
-## ⚡ Quick Start & Usage
+# ⚡ Core Features
 
-### 1. Install dependencies
+- 🛡️ **Safe File Processing**  
+  Loads the original workbook and saves a separate formatted copy without overwriting the source file.
+
+- 🧮 **Automatic Summary Calculations**  
+  Detects common numeric columns and inserts Excel SUM formulas into a summary row.
+
+- 💲 **Currency Formatting**  
+  Applies currency formatting to detected financial columns such as sales, revenue, price, cost, and profit.
+
+- 🎨 **Spreadsheet Formatting**  
+  Applies header styling, alignment, borders, and improved column sizing for better readability.
+
+- 🔍 **Navigation Improvements**  
+  Freezes the header row and enables Excel filters for easier data browsing.
+
+- 📁 **Automated Output Creation**  
+  Generates the updated workbook automatically using the `updated_` naming format.
+
+---
+
+# 🛠️ Tech Stack
+
+- **Language:** Python 3.x
+- **Spreadsheet Processing:** `openpyxl`
+- **File Handling:** `pathlib`
+- **System Utilities:** `sys`
+
+---
+
+# 🚀 Quick Start
+
+## 1. Clone the repository
+
 ```bash
 git clone https://github.com/DevBlueprintLab/python-excel-file-formatter.git
+
 cd python-excel-file-formatter
-pip install openpyxl
 ```
-2. Run the tool
+
+## 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Run the formatter
+
 ```bash
 python excel_file_formatter.py
 ```
-3. Execution example
-```bash
+
+## 4. Provide your Excel file path
+
+Example:
+
+```text
 Excel File Formatter
-====================
+===============
 
 Please enter the file path:
-C:\Users\User\Downloads\sales.xlsx
+sample_data/sales_report.xlsx
 
-✓ File loaded successfully
-✓ Formatting applied
-✓ Output saved as: updated_sales.xlsx
+Workbook formatted successfully!
+
+Saved as:
+updated_sales_report.xlsx
 ```
-## 📁 Project Structure
-```
+
+---
+
+# 📁 Project Structure
+
+```text
 python-excel-file-formatter/
-├── excel_file_formatter.py       # Main automation script
-├── README.md                     # Project documentation
+
+├── excel_file_formatter.py          # Main automation script
+├── README.md                        # Project documentation
+├── LICENSE                          # MIT License
+├── requirements.txt                 # Project dependencies
+├── sample_data/
+│   └── sales_report.xlsx            # Example Excel workbook
 └── images/
-    ├── before.png
-    ├── terminal.png
-    └── after.png
+    ├── excel-input.png              # Original spreadsheet
+    ├── formatting-process.png       # Formatting execution
+    └── formatted-excel-output.png   # Final formatted workbook
 ```
+
 ---
-## 🔮 Roadmap & Future Improvements
- * Support for multi-sheet processing
- * Automatic detection of date columns
- * Improved auto-sizing for large datasets
- * Optional chart generation for summaries
- * GUI version for non-technical users
+
+# 💼 Practical Use Cases
+
+This automation tool can help with:
+
+- Preparing financial reports before sharing
+- Formatting recurring Excel exports
+- Improving spreadsheet readability
+- Automating repetitive reporting tasks
+- Standardizing business spreadsheets
+
 ---
-Developed by DevBlueprint Lab
+
+# 🔮 Future Improvements
+
+- Support formatting multiple worksheets
+- Add date column detection
+- Improve formatting customization options
+- Generate charts from summary data
+- Add GUI support for non-technical users
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+Developed by **DevBlueprintLab**
